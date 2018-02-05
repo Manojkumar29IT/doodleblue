@@ -24,13 +24,10 @@
 		.on('json',(jsonObj)=>{
 			var jsonArray = [];
 			jsonArray.push(jsonObj);
-			console.log(JSON.stringify(jsonArray));
-			console.log(typeof(jsonArray))
 			AssociateInfo.collection.insertMany(jsonArray, function(error, docs) {
 				if (error)
 					console.log('error occurred during insertion - ' + error);
 				else {
-					console.log('Insertion Successful');
 					res.end('Insertion successful');
 				}
 			});
@@ -48,7 +45,6 @@
 				console.log('error occurred while retrieving - ' + error);
 			else {
 				console.log('retrieved Successfully');
-				console.log(docs);
 				res.end(JSON.stringify(docs));
 			}
 		});
