@@ -1,0 +1,22 @@
+{
+  "name": "doodleblue",
+  "version": "1.0.0",
+  "description": "Sample code to read data from CSV and bulk insert in Mongo DB",
+  "main": "yes",
+  "keywords": [
+    "Manoj",
+    "doodleblue",
+    "node",
+    "mongo",
+    "csv"
+  ],
+  "author": "Manoj",
+  "license": "ISC",
+  "dependencies": {
+    "csvtojson": "^1.1.9",
+    "express": "^4.16.2",
+    "fs": "0.0.1-security",
+    "jsontocsv": "^0.3.0",
+    "mongoose": "^5.0.3"
+  }
+}
